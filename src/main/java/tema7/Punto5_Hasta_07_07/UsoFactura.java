@@ -5,7 +5,7 @@ public class UsoFactura {
     public static void main(String[] args) {
         // Comenta una de ellas y prueba
         usoFacturasSinClose();
-        usoFacturasConClose();
+        //usoFacturasConClose();
     }
 
     private static void usoFacturasSinClose(){
@@ -17,7 +17,8 @@ public class UsoFactura {
         System.out.println("f1 = " + f1);
         System.out.println("Nº facturas (paso1.2)="+Factura.getCuantas());
         // Utilizo el otro constructor
-        Factura f2=new Factura("2025/A/3334");
+        // MOD 11-02-25: Cambio número de factura
+        Factura f2=new Factura("2025/A/3338");
         f2.setFecha(new Date());
         System.out.println("f2 = " + f2);
         System.out.println("Nº facturas (paso1.3)="+Factura.getCuantas());

@@ -1,0 +1,24 @@
+Realizar los siguientes ejercicios basándonos en la codificación de Factura:
+- Clase y uso de Coche
+    Qué es? Tiene
+        Ruedas
+        Matrícula
+        Puertas
+    Qué puedo hacer?
+        Saber los coches que hay
+        Saber el número de ruedas pero no cambiarlos
+        Cargar/saber número de matrícula
+        Cargar/saber número de puertas
+        imprimir (toString)
+    En la codificación se pide que la matrícula se grabe en dos atributos diferentes (números y las letras)
+- Clase y uso de Matriz (NOTA: La definición de lo que es y puede hacer debe ser formal, no así)
+    Qué es? Un Matriz regular dinámica (no dispersa) de una o dos dimensiones de enteros
+    Qué puedo hacer?
+        Definir una matriz indicando las dimensiones
+        Almacenar un número en el índice que deseemos siempre que los anteriores estén ocupados
+        Saber valor de un elemento indicando índices
+        Saber dimensión (una o dos) y cuántos elementos se han almacenado
+        imprimir (toString)
+NOTA: Cuando sepamos crear Clases genéricas, podremos ampliar esta clase para que funcione para cualquier
+tipo de datos
+
