@@ -19,6 +19,33 @@ Realizar los siguientes ejercicios basándonos en la codificación de Factura:
         Saber valor de un elemento indicando índices
         Saber dimensión (una o dos) y cuántos elementos se han almacenado
         imprimir (toString)
+- Clase y uso de Tools
+    Qué es? Una clase con métodos estáticos de funciones interesantes como obtener número aleatorio
+    Qué puedo hacer? Tendrás que definir el comportamiento de mínimo tres métodos estáticos
 NOTA: Cuando sepamos crear Clases genéricas, podremos ampliar esta clase para que funcione para cualquier
 tipo de datos
+
+GUIA DE DESARROLLO DE ESTAS CLASES:
+Plantéate esta forma de desarrollo para la clase Matriz aprovechando los asistentes de Intellij
+1) En vez de abordar primero Matrices de una y dos dimensiones,
+vamos a resolver de una y luego ampliaremos a dos, verás como te cuesta mucho menos
+2) Empezaremos codificando (sí digo codificando) la clase Main con un ejemplo de uso de Matriz
+que aborde todas sus funcionalidades.
+Todo esto sin crear el fichero Matriz.java
+
+    2.1) Conforme vayamos usando en Main la clase Intellij nos mostrará un error y los asistentes nos
+    ofrecerán una solución que pasará por:
+        Crear Matriz.java añadiendo el constructor cuando creemos el objeto con new
+        Ir añadiendo las cabeceras de los métodos según los incluyamos en main
+    2.2) Al ir construyendo Matriz.java es muy importante que indiquemos
+        Qué es Matriz?
+        Qué funcionalidad aporta cada método?
+        Vamos a usar Javadoc para ello, incluye comentarios de Javadoc conforme añadas elementos.
+        Escribe uno al principio de la clase contando lo que es , añade @author y @version
+        Escribe uno por cada constructor
+        Escribe otro por cada método
+3) Al finalizar con todas las funcionalidades, podemos directamente sincronizar nuestra versión de Matriz
+para que el resto de compañeros de proyecto puedan hacer referencia a la clase.
+Si quisieran probar sus códigos que usan esta clase tendrían que simular su comportamiento
+Otra opción sería generar la doc en html y compartirla desde Tools/generate javadoc
 
