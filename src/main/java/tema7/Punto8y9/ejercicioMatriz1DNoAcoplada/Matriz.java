@@ -1,9 +1,7 @@
-package tema7.Punto5_Hasta_07_07.ejercicioMatriz1DNoAcoplada;
+package tema7.Punto8y9.ejercicioMatriz1DNoAcoplada;
 // NOTA: La implementación de esta lista es ineficiente porque no enlazamos los nodos
-// ordenador por índice por lo que siempre hay que recorrer la lista completa en
-// cualquier búsqueda
-
-import java.util.Arrays;
+// ordenados por índice por lo que siempre hay que recorrer la lista completa en
+// cualquier búsqueda. La intención es simplificar el código para centrarnos en POO
 
 /**
  * Matriz dinámica de una dimensión de enteros (realmente es dispersa)
@@ -12,23 +10,25 @@ import java.util.Arrays;
  * @version 1
  */
 public class Matriz {
-    private int indice;
-    private int valor;
-    private Matriz siguiente;
+    // En esta implementación uso una clase interna privada
+    // MI: Una clase externa no puede ser privada pero una interna sí puede
+    // podría haber declarado Nodo como una clase separada en el mismo paquete (es recomendable)
+
+    private Nodo contenido;
     /**
-     * Contruye una matriz de enteros, sus elementos iniciados a cero
+     * Construye una matriz de enteros con sus elementos iniciados a cero
      */
     public Matriz() {
-        this.siguiente=null;
+        this.contenido=null;
     }
 
     /**
-     * Devuelve la referencia del nodo para ese indice y null si no lo encuentra
+     * Devuelve la referencia del nodo para ese índice y null si no lo encuentra
      * @param indice a buscar
      * @return devuelve referencia del nodo
      */
-    private Matriz busco(int indice){
-        Matriz aux=this;
+    private Nodo busco(int indice){
+        Nodo aux=contenido;
         while (aux!=null){
             if (aux.indice==indice) return aux; // Encontrado
             aux=aux.siguiente;
@@ -42,17 +42,18 @@ public class Matriz {
      * @param valor valor a asignar
      */
     public void asigno(int indice, int valor) {
-        Matriz aux=busco(indice);
+        Nodo aux=busco(indice);
         if (aux!=null) {
             aux.valor = valor; // Sustituyo valor
         }
         else {
             // No está, lo inserto al principio que es lo más sencillo
-            Matriz nuevoNodo=new Matriz();
+            Nodo nuevoNodo=new Nodo();
             nuevoNodo.indice=indice;
             nuevoNodo.valor=valor;
-            nuevoNodo.siguiente=this.siguiente;
-            this.siguiente=nuevoNodo;
+            // Reconecto el nodo al principio de la lista enlazada
+            nuevoNodo.siguiente=this.contenido;
+            this.contenido=nuevoNodo;
         }
     }
 
@@ -62,10 +63,23 @@ public class Matriz {
      * @return valor en ese indice
      */
     public int leo(int indice) {
-        Matriz aux=busco(indice);
+        Nodo aux=busco(indice);
         if (aux==null) return 0; // No lo encuentro, por defecto es 0
         return aux.valor;
     }
 
     // No tiene mucho sentido toString si no creamos el concepto de longitud
+    // Se puede proponer el mostrar sólo el contenido de los nodos
+
+    @Override
+    public String toString() {
+        String res = "Matriz{";
+        Nodo aux = contenido;
+        while (aux != null) {
+            res += "[" + aux.indice + "," + aux.valor + "]";
+            aux=aux.siguiente;
+        }
+        res += '}';
+        return res;
+    }
 }

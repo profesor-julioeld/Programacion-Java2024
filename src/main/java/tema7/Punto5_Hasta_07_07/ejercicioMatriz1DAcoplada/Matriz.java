@@ -61,9 +61,11 @@ public class Matriz {
      * @param cantidad valor a ampliar
      */
     public void amplio(int cantidad) {
-        longitud+=cantidad;
-        int[] nuevo=new int[longitud];
-        System.arraycopy(contenido,0,nuevo,0,contenido.length);
+        int longitudNueva=longitud+cantidad;
+        int[] nuevo=new int[longitudNueva];
+        System.arraycopy(contenido,0,nuevo,0,longitud);
+        // Actualizo atributos
+        longitud=longitudNueva;
         contenido=nuevo;
     }
 

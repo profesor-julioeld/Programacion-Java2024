@@ -25,6 +25,9 @@ Realizar los siguientes ejercicios basándonos en la codificación de Factura:
 NOTA: Cuando sepamos crear Clases genéricas, podremos ampliar esta clase para que funcione para cualquier
 tipo de datos
 
+Si todavía te encuentras con fuerza, te propongo una nueva clase que evite el problema de no poder calcular
+el factorial de n=100 ya que si almacenamos el resultado en long, sólo podemos llegar a n=20.
+
 GUIA DE DESARROLLO DE ESTAS CLASES:
 Plantéate esta forma de desarrollo para la clase Matriz aprovechando los asistentes de Intellij
 1) En vez de abordar primero Matrices de una y dos dimensiones,
