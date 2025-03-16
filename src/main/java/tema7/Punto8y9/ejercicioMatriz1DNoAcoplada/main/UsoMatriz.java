@@ -1,6 +1,6 @@
-package tema7.Punto8y9.ejercicioMatriz1DNoAcoplada;
+package tema7.Punto8y9.ejercicioMatriz1DNoAcoplada.main;
 
-import java.util.ArrayList;
+import tema7.Punto8y9.ejercicioMatriz1DNoAcoplada.Matriz;
 
 public class UsoMatriz {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package tema7.Punto5_Hasta_07_07.prueba;
+package tema7.Punto5_Hasta_07_07.matrizNoDispersa_RealizadaEnClase_AmpliacionAuto;
 
 public class UsoMatriz {
     public static void main(String[] args) {
