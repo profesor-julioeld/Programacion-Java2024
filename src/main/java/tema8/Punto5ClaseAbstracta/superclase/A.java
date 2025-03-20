@@ -1,6 +1,11 @@
 package tema8.Punto5ClaseAbstracta.superclase;
 
 public abstract class A {
+    // Aunque una clase abstracta no se puede instanciar tiene su constructor
+    // por defecto e incluso se puede codificar.
+    public A(){
+        System.out.println("Clase abstracta A");
+    }
     private int x=1;
     public int getX(){
         return x;

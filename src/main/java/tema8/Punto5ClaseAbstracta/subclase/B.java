@@ -9,4 +9,5 @@ public class B extends A {
     public void metodo2() {
         System.out.println("Método 2 implementado en B");
     }
+
 }

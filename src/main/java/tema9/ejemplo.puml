@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract class Instrumento
+class Violin
+class Piano
+abstract class Animal
+class Leon
+class Perro
+interface Sonoro
+
+Sonoro <|-- Instrumento
+Sonoro <|-- Animal
+Instrumento <|-- Violin
+Instrumento <|-- Piano
+Animal <|-- Perro
+Animal <|-- Leon
+
+@enduml

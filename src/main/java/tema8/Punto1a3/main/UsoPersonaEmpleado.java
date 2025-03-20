@@ -15,9 +15,9 @@ public class UsoPersonaEmpleado {
         // RESPUESTA: La respuesta es NO (pero tiene sorpresa)
         // Sólo serán accesibles los miembros visibles en Persona
         System.out.println("PROBAMOS: Miembros específicos de Empleado desde p");
-        // p.soyEmpleado(); // Da error al ser de empleado
+        //p.soyEmpleado(); // Da error al ser de empleado
         ((Empleado)p).soyEmpleado(); // Este sí funciona, ¿Por qué?
-        // System.out.println(p.salario); // Da error al ser de empleado
+        //System.out.println(p.salario); // Da error al ser de empleado
         System.out.println("PROBAMOS: Miembros específicos de Empleado desde e");
         e.soyEmpleado();
         System.out.println(e.salario);

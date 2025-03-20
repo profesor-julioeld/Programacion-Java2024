@@ -1,0 +1,65 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class Animal {
+  + Animal(): 
+  # velocidad: int
+  # domesticado: boolean
+  # patas: int
+  + sonidoEnReposo(): String
+  + sonidoEnAccion(): String
+   patas: int
+   velocidad: int
+   domesticado: boolean
+}
+class Instrumento {
+  + Instrumento(String): 
+  - fabricante: String
+  + toString(): String
+  + sonidoEnAccion(): String
+  + categoria(): void
+  + sonidoEnReposo(): String
+  + queSoy(): String
+   fabricante: String
+}
+class Leon {
+  + Leon(int): 
+  + sonidoEnAccion(): String
+  + toString(): String
+   domesticado: boolean
+}
+class Perro {
+  + Perro(String, int): 
+  + sonidoEnReposo(): String
+  + sonidoEnAccion(): String
+  + toString(): String
+}
+class Piano {
+  + Piano(String, int): 
+  - teclas: int
+  + queSoy(): String
+  + sonidoEnAccion(): String
+   teclas: int
+}
+interface Sonoro << interface >> {
+  + sonidoEnAccion(): String
+  + generasSonido(): boolean
+  - respuestaCierta(): boolean
+  + sonidoEnReposo(): String
+}
+class Violin {
+  + Violin(String): 
+  + sonidoEnAccion(): String
+  + queSoy(): String
+}
+
+Animal       -[#008200,dashed]-^  Sonoro      
+Instrumento  -[#008200,dashed]-^  Sonoro      
+Leon         -[#000082,plain]-^  Animal      
+Perro        -[#000082,plain]-^  Animal      
+Piano        -[#000082,plain]-^  Instrumento 
+Violin       -[#000082,plain]-^  Instrumento 
+@enduml
