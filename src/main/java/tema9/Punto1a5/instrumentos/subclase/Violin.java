@@ -1,6 +1,6 @@
-package tema9.instrumentos.subclase;
+package tema9.Punto1a5.instrumentos.subclase;
 
-import tema9.instrumentos.Instrumento;
+import tema9.Punto1a5.instrumentos.Instrumento;
 
 public class Violin extends Instrumento {
     public Violin(String fabricante) {

@@ -1,6 +1,6 @@
-package tema9.animales;
+package tema9.Punto1a5.animales;
 
-import tema9.interfaces.Sonoro;
+import tema9.Punto1a5.interfaces.Sonoro;
 
 // Se refiere a Animales con patas y que corren
 public abstract class Animal implements Sonoro {
@@ -10,6 +10,7 @@ public abstract class Animal implements Sonoro {
     protected boolean domesticado=false;
     // Dejo la implementación de sonido en acción y en reposo
     // a cada animal (por eso pongo abstract)
+    // NOTA: Recuerda que en este caso no es necesario
     @Override
     public abstract String sonidoEnAccion();
 

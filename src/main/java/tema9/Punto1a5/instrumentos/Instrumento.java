@@ -1,9 +1,9 @@
-package tema9.instrumentos;
+package tema9.Punto1a5.instrumentos;
 
-import tema9.interfaces.Sonoro;
+import tema9.Punto1a5.interfaces.Sonoro;
 
 public abstract class Instrumento implements Sonoro {
-    // Sólo lo voy a cambiar en el contructor
+    // Sólo lo voy a cambiar en el constructor
     private final String fabricante;
     // Una clase abstracta puede tener un constructor
     // esto obliga a que los hijos llamen a ese constructor en caso de tener parámetros
@@ -16,6 +16,7 @@ public abstract class Instrumento implements Sonoro {
     }
     // Dejo la implementación de sonido en acción a cada instrumento
     // por eso pongo abstract
+    // NOTA: No es necesario, lo pongo por entender mejor lo que pasa
     @Override
     public abstract String sonidoEnAccion();
     // Como no hay sonido en reposo, no sobreescribo el metodo sonidoEnReposo
@@ -27,8 +28,8 @@ public abstract class Instrumento implements Sonoro {
     }
 
     // Es un método estático por lo que no se puede Override
-    public static void categoria(){
-        System.out.println("Pertenezco a los instrumentos");
+    public static String categoria(){
+        return "Pertenezco a los instrumentos";
     }
 
     // Que cada instrumento diga qué es

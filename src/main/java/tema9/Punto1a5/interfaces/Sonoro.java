@@ -1,4 +1,4 @@
-package tema9.interfaces;
+package tema9.Punto1a5.interfaces;
 // Para crear un Interface desde este IDE seleccionamos Java Class y
 // desde allí Interface
 // No se pueden instanciar al igual que pasa con las clases abstractas

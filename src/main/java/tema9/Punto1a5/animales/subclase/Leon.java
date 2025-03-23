@@ -1,7 +1,7 @@
 
-package tema9.animales.subclase;
+package tema9.Punto1a5.animales.subclase;
 
-import tema9.animales.Animal;
+import tema9.Punto1a5.animales.Animal;
 
 // Están en un Zoológico
 public class Leon extends Animal {
