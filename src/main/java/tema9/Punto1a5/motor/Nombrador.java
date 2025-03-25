@@ -24,9 +24,9 @@ public class Nombrador extends Thread{
             }
             System.out.println(" VUELTA Nº "+i);
             // Uso de foreach y expresion lambda
-            lista.forEach(System.out::println);
-            /*for(Sonoro s:lista)
-                System.out.println(s);*/
+            //lista.forEach(System.out::println);
+            for(Sonoro s:lista)
+                System.out.println(s);
         }
     }
 }
