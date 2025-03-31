@@ -46,7 +46,6 @@ public class Leon extends Animal implements Comparable<Leon> {
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-
         Leon leon = (Leon) o;
         // Es lo mismo que usar hashcode pero con tolerancia a los nulos
         return Objects.hashCode(this)==Objects.hashCode(o);

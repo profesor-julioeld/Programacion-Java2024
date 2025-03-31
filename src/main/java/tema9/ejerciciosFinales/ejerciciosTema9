@@ -1,0 +1,27 @@
+Se plantea los siguiente ejercicios a resolver:
+1) Crea un hilo que escriba, sin parar, un entero ascendente correspondiente al número de segundos
+transcurridos desde su inicio. Escribirá cada segundo. No puedes crear ningún fichero adicional
+2) Crea tres hilos que compitan por escribir su mensaje en la pantalla (cada uno escribe su nombre del
+tipo SOY HILO 1 etc), cada hilo escribirá su mensaje 5 veces con un retraso aleatorio en cada ciclo entre
+1 y 10 segundos. No puedes crear ningún fichero adicional.
+La implementación tienes que realizarla usando expresiones lambda.
+Modifica este ejercicio para que se minimice el código de main lo máximo posible
+3) Copia/pega el código de Factura y modifica el atributo Date por LocalDate (tienes un documento en Drive
+que te explica el por qué del cambio). Codifica un main donde manejes ese atributo de la siguiente forma:
+ Crea una factura con la fecha actual y la siguiente en secuencia con la fecha de dentro de 5 días (sin harcodear)
+***** SI TE SALE EL EJERCICIO 4 YA PODEMOS IRNOS A LA PISCINA Y TERMINAR EL CURSO *****
+4) Especializa la clase anterior (nombre Factura 2) y añade el main necesario para crear 5 facturas en
+secuencia en número y fecha desde una dada (pero pasando la fecha como un String)
+Investiga un poco y busca como parsear un String que contenga una fecha con un formateador.
+Almacénalas en un ArrayList pero no en orden y escribe su contenido por pantalla ordenado.
+Usa varias formas de ordenación:
+El orden natural definido en Factura por implementación de Comparable (order ascendente de id)
+EL reverse de ese orden
+y otro orden basado en número de factura (asc) y por último en el total de la factura (desc)
+5) Codifica el ejercicio de la bonoloto usando uno de los tipos de colección derivados del interfaz Set
+Para mostrar el resultado tienen que usar un forEach.
+6) Crea un Arraylist de palabras en castellano y ordenalas siguiendo el orden del alfabeto español, usar un
+comparator para ello.
+
+NOTA: Aunque no hayamos visto todas las posibilidades de Collections, no deberías tener ningún problema
+a la hora de codificar estos ejercicios con los ejemplos que ya hemos visto.
