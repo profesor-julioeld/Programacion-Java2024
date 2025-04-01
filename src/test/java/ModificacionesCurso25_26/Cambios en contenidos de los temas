@@ -1,0 +1,14 @@
+Los expresiones lambda y métodos referenciados:
+Aparecen en el libro en el tema 13 (muy tarde)
+Pero yo he hecho la introducción de expresiones lambda en el tema9 Punto 6 a la vez
+que explicaba los hilos en el mismo punto
+Los método referenciados los he introducido en los ejercicios finales del tema9
+
+Las clases genéricas:
+Aparecen en el tema 12 pero es necesario hablar de ellas aunque sea una introducción
+en el tema9 punto 9 cuando se habla de Comparable y comparator
+
+Las excepciones:
+Aparecen en el tema 10 pero desde casi el principio empezamos a usarlas
+haciendo un Throw con un caza brujas y con try-catch
+También lo explico para poder aplicar un Try-resources en caso de usar Autoclosable

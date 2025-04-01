@@ -34,9 +34,9 @@ public class UsoFactura2 {
         facturas.forEach(System.out::println);
         // Que bonito hubiera quedado si hubiese podido poner .forEach() pero eso se lo dejamos a Stream
         // Descomenta la siguiente sentencia si quieres entrar en otro mundo!!!
-        /*facturas.stream()
+        facturas.stream()
                 .sorted((a, b) -> a.getNumFactura().compareTo(b.getNumFactura()))
-                .forEach(System.out::println);*/
+                .forEach(System.out::println);
         System.out.println("En orden descendente de total de factura");
         facturas.sort((a, b) -> (int)b.getTotal()*100-(int)a.getTotal()*100);
         facturas.forEach(System.out::println);
