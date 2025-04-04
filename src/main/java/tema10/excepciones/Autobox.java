@@ -17,8 +17,8 @@ public class Autobox {
         // Ahora quiero borrar el Integer 9, pruebo dos casos
         // NOTA: Descomenta uno de los remove y prueba
         System.out.println(i.getClass());
-        lista.remove(i);
-        //lista.remove(9); // Este produce un error ya que no existen 10 elementos
+        //lista.remove(i);
+        lista.remove(9); // Este produce un error ya que no existen 10 elementos
         System.out.println("lista = " + lista);
     }
 }
