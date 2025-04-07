@@ -1,4 +1,4 @@
-package tema10.stream_flujosDatos;
+package tema10.stream_flujosDatosTexto;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -26,7 +26,10 @@ public class Punto2Entrada {
         try (FileReader f=new FileReader(rutaFile)){
             int c;
             StringBuilder s=new StringBuilder();
-            while ((c=f.read())!=-1) s.append((char)c);
+            while ((c=f.read())!=-1) {
+                System.out.printf("He leido el carácter %c %d\n",(char)c,c);
+                s.append((char)c);
+            }
             System.out.println("s1 = " + s);
         }
         catch (FileNotFoundException e){System.out.println("Problemas con el fichero");}

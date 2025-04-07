@@ -1,6 +1,6 @@
-package tema10.stream_flujosDatos.Punto4.Punto4Concepto3;
+package tema10.stream_flujosDatosTexto.Punto4.Punto4Concepto3;
 
-// E
+// Ehhhhh!!! Chachooooooo!!!
 public class ExcepcionSuprimidaCaso1 {
     public static void main(String[] args) {
         try { suprimoExcepcion(); }

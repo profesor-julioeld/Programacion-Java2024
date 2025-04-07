@@ -1,4 +1,4 @@
-package tema10.stream_flujosDatos;
+package tema10.stream_flujosDatosTexto;
 
 import java.io.*;
 import java.util.Locale;
@@ -31,7 +31,7 @@ public class Punto3Entrada {
     private static void leoDecimalesConComa(InputStream r){
         try (Scanner sc=new Scanner(r).useLocale(Locale.getDefault())){
             // Cada token es un decimal
-            while (sc.hasNext()) {
+            while (sc.hasNextDouble()) {
                 double d = sc.nextDouble();
                 System.out.println(d);
             }

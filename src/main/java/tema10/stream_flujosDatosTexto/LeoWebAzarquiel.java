@@ -1,4 +1,4 @@
-package tema10.stream_flujosDatos;
+package tema10.stream_flujosDatosTexto;
 
 import java.io.*;
 import java.net.*;

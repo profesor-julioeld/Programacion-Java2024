@@ -1,4 +1,4 @@
-package tema10.stream_flujosDatos.Punto4.Punto4Concepto2.subclases;
+package tema10.stream_flujosDatosTexto.Punto4.Punto4Concepto2.subclases;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

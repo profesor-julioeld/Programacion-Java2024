@@ -3,6 +3,10 @@ package tema9.Punto1a5.interfaces;
 // desde allí Interface
 // No se pueden instanciar al igual que pasa con las clases abstractas
 // Definen funcionalidades comunes, en este caso "que pueden generar sonido"
+// MUY IMPORTANTE: Una interfaz no puede usar implements, en su lugar puede
+// hacer extends de varias interface a la vez.
+// Echa un vistazo a la definición del Interfaz ObjectOutput en la siguiente línea
+// public interface ObjectOutput extends DataOutput, AutoCloseable
 public interface Sonoro {
     // Un atributo es de tipo public, static y final por defecto
     // Prueba a ponerlos y verás como el IDE te dice que son redundantes
